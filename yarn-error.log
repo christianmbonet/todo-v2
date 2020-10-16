@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/christianbonet/Desktop/wyncode/todo-v2-c39/package.json: Unexpected end of JSON input
+  SyntaxError: /Users/christianbonet/Desktop/wyncode/todo-v2-c39/package.json: Unexpected token } in JSON at position 277
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -27,14 +27,15 @@ npm manifest:
     "version": "1.0.0",
     "main": "server.js",
     "license": "MIT",
-    "dependencies": {
-      "express": "^4.17.1",
     "scripts": {
-        "dev": "nodemon ./server.js"
+      "dev": "nodemon ./server.js"},
+      "start": "node ./server.js",
+    "dependencies": {
+      "express": "^4.17.1"
     },
     "devDependencies": {
       "nodemon": "^2.0.5"
-    }
+    },
   }
 
 yarn manifest: 
